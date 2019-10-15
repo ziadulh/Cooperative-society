@@ -5,6 +5,6 @@
 </head>
 <body>
     @include('pages.nav')
-    <h2 align="center"></h2>
+    <h2 align="center">Welcome to KhamarBari Cooperative-society</h2>
 </body>
 </html>

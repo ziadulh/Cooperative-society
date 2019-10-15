@@ -1,12 +1,14 @@
+
+@include('pages.nav')
 {!! Form::open(['action' => ['memberListController@assignedinformation', $w->id], 'method' => 'POST']) !!}
 
 
 <div class="form-group"> 
-	{{Form::label('gAmount','Given Amount')}}
+	{{Form::label('gAmount','Add new Installment')}}<br>
 	{{Form::text('gAmount',$w->gAmount,['class'=>'form-control','placeholder'=>'Add new install amount'])}}
 </div>
 
-{{Form::submit('Submit', ['class'=>'btn btn-primary'])}}
+<br>{{Form::submit('Submit', ['class'=>'btn btn-primary'])}}
 
 
 {!! Form::close() !!}

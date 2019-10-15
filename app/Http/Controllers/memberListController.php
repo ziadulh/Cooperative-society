@@ -56,11 +56,11 @@ class memberListController extends Controller
         $member->phone = $request->input('phone');
         $member->membershipType = $request->input('membershipType');
         $member->tAmount = $request->input('tAmount');
-        $member->gAmount = $request->input('gAmount');
-        $member->rAmount = $request->input('rAmount');
+        $member->gAmount = 0;
+        $member->rAmount = $request->input('tAmount');
         $member->tInstallment = $request->input('tInstallment');
-        $member->gInstallment = $request->input('gInstallment');
-        $member->rInstallment = $request->input('rInstallment');
+        $member->gInstallment = 0;
+        $member->rInstallment = $request->input('tInstallment');
         $member->save();
 
         return redirect('/members');
